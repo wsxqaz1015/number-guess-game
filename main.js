@@ -35,13 +35,13 @@ function play(){
     chanceArea.textContent = `남은 기회: ${chances}`;
     
     if(userValue<computerNum){
-        resultText.textContent = "up!"
+        resultText.textContent = "Up!!"
         resultTextImg.src="https://media0.giphy.com/media/3ov9jExd1Qbwecoqsg/200.gif";
     } else if(userValue>computerNum){
-        resultText.textContent = "down!"
+        resultText.textContent = "Down!!"
         resultTextImg.src="https://media.giphy.com/media/r2puuhrnjG7vy/giphy.gif";
     } else {
-        resultText.textContent = "맞췄다!"
+        resultText.textContent = "맞췄다!!"
         resultTextImg.src="https://media.tenor.com/images/0a81b89954678ebe228e15e35044f7a5/tenor.gif";
         userButton.disabled=true;
     }
@@ -62,7 +62,7 @@ function reset(){
     randomNum();
     chances = 5;
     chanceArea.textContent = `남은 기회: ${chances}`;
-    resultText.textContent = "결과가 나온다!"
+    resultText.textContent = "결과 나온다!! 가보자!!"
     history =[];
     userButton.disabled=false;
 }

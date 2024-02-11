@@ -4,27 +4,27 @@
     padding: 0;
     margin: 0;
 }
-h1{
+.title{
     font-weight: 600;
-    padding: 60px 1px;
+    padding: 36px 0px;
     font-size: 60px;
 }
 
 .game-wrap{
     width: 100%;
-    height: 100vh;
+    padding-bottom: 2%;
     margin: 0 auto;
     text-align: center;
-    background-color: rgb(250, 235, 215);
+    /* background-color: rgb(250, 235, 215); */
+    background: url(./image/party.png) no-repeat 50% 50%;
+    background-size: contain;
     box-sizing: border-box;
 }
 .game-content{
     font-size: 2vw;
     font-weight: 400;
-    padding: 40px;
-    margin: 2% 6%;
-    background: #fff;
-    border: 2px solid rgb(250, 229, 202);
+    padding: 40px 6%;
+    background: rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
 }
 #chance-area{
@@ -45,7 +45,7 @@ h1{
     display: block;
     margin: 3% auto 5%;
     width: 51%;
-    font-size: 6vw;
+    font-size: 4vw;
     height: 83px;
     text-align: center;
     line-height: 83px;
@@ -72,12 +72,13 @@ button:disabled{
     opacity: .5;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1024px) {
     #result-area{
         font-size: 5vw;
     }
     #user-input{
         width: 84%; 
+        font-size: 9vw;
     }
     #chance-area{
         font-size: 6vw;
