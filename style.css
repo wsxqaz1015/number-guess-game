@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-weight: 600;
+    padding: 60px 1px;
+    font-size: 60px;
+}
+
+.game-wrap{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(250, 235, 215);
+    box-sizing: border-box;
+}
+.game-content{
+    font-size: 2vw;
+    font-weight: 400;
+    padding: 40px;
+    margin: 2% 6%;
+    background: #fff;
+    border: 2px solid rgb(250, 229, 202);
+    box-sizing: border-box;
+}
+#chance-area{
+    padding: 30px 0;
+}
+#result-area{
+    font-size: 2vw;
+}
+.result-text{
+    margin: 3% auto;
+}
+.result-img{
+    width: 20vw;
+    height: 20vh;
+}
+
+#user-input{
+    display: block;
+    margin: 3% auto 5%;
+    width: 51%;
+    font-size: 6vw;
+    height: 83px;
+    text-align: center;
+    line-height: 83px;
+    box-sizing: border-box;
+}
+button{
+    display: inline-block;
+    width: 45%;
+    margin: 0 2% 6% 2%;
+    font-size: 2vw;
+    line-height: 5vw;
+    color: #fff;
+    border: 0;
+    border-radius: 30px;
+    background-color: rgb(173, 216, 230);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+button:hover{
+    border: 2px solid #000;
+    
+}
+button:disabled{
+    opacity: .5;
+}
+
+@media screen and (max-width: 750px) {
+    #result-area{
+        font-size: 5vw;
+    }
+    #user-input{
+        width: 84%; 
+    }
+    #chance-area{
+        font-size: 6vw;
+    }
+    button{
+        display: block;
+        width: 90%;
+        line-height: 10vw;
+        margin: 6% auto;
+        font-size: 7vw;
+    }
+    button:hover{
+        border: none;
+    }
+}
+  
